@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Employee Dashboard</h1>
+
+    <!-- Dashboard Cards -->
+    <div class="dashboard-cards">
+
+        <div class="card">
+            <h3>Total Employees</h3>
+            <h2 id="totalEmployees">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Available</h3>
+            <h2 id="availableEmployees">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Busy</h3>
+            <h2 id="busyEmployees">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>On Leave</h3>
+            <h2 id="leaveEmployees">0</h2>
+        </div>
+
+    </div>
+
+    <!-- Search -->
+    <div class="search-box">
+        <input
+            type="text"
+            id="searchEmployee"
+            placeholder="Search Employee..."
+        >
+    </div>
+
+    <!-- Employee Table -->
+    <table border="1" width="100%" id="employeeTable">
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="employeeDashboard.js"></script>
+
+</body>
+</html>

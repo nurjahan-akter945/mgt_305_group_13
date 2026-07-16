@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Project Dashboard</h1>
+
+    <!-- Dashboard Cards -->
+    <div class="dashboard-cards">
+
+        <div class="card">
+            <h3>Total Projects</h3>
+            <h2 id="totalProjects">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Pending</h3>
+            <h2 id="pendingProjects">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Ongoing</h3>
+            <h2 id="ongoingProjects">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Completed</h3>
+            <h2 id="completedProjects">0</h2>
+        </div>
+
+    </div>
+
+    <!-- Search -->
+    <div class="search-box">
+        <input
+            type="text"
+            id="searchProject"
+            placeholder="Search by Project ID, Client or Employee"
+        >
+    </div>
+
+    <!-- Table -->
+    <table  border="1" width="100%" id="projectTable">
+
+        <thead>
+
+            <tr>
+                <th>Project ID</th>
+                <th>Client</th>
+                <th>Employee</th>
+                <th>Service</th>
+                <th>Deadline</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="projectDashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Project Management</h1>
+
+    <form id="projectForm">
+
+        <div class="form_group">
+            <label>Project ID</label>
+            <input type="text" id="projectId" required>
+        </div>
+
+        <div class="form_group">
+            <label>Client</label>
+            <select id="clientSelect" required>
+                <option value="">Select Client</option>
+            </select>
+        </div>
+
+        <div class="form_group">
+            <label>Assigned Employee</label>
+            <select id="employeeSelect" required>
+                <option value="">Select Employee</option>
+            </select>
+        </div>
+
+        <div class="form_group">
+            <label>Service</label>
+            <input type="text" id="service" readonly>
+        </div>
+
+        <div class="form_group">
+            <label>Priority</label>
+            <select id="priority">
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+            </select>
+        </div>
+
+        <div class="form_group">
+            <label>Deadline</label>
+            <input type="date" id="deadline">
+        </div>
+
+        <div class="form_group">
+            <label>Status</label>
+            <select id="status">
+                <option>Pending</option>
+                <option>Ongoing</option>
+                <option>Completed</option>
+                <option>Delivered</option>
+            </select>
+        </div>
+
+        <button type="submit">Create Project</button>
+
+    </form>
+
+</div>
+
+<script src="project.js"></script>
+
+</body>
+</html>

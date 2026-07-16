@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Client</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Edit Client</h1>
+
+    <form id="editForm">
+
+        <div class="form_group">
+            <label>Client ID</label>
+            <input type="number" id="clientId" readonly>
+        </div>
+
+        <div class="form_group">
+            <label>Client Name</label>
+            <input type="text" id="clientName">
+        </div>
+
+        <div class="form_group">
+            <label>Company Name</label>
+            <input type="text" id="companyName">
+        </div>
+
+        <div class="form_group">
+            <label>Email</label>
+            <input type="email" id="email">
+        </div>
+
+        <div class="form_group">
+            <label>Phone</label>
+            <input type="tel" id="phone">
+        </div>
+
+        <div class="form_group">
+            <label>Service Required</label>
+
+            <select id="serviceRequired">
+                <option>Data Annotation</option>
+                <option>Data Analysis</option>
+                <option>Web Scraping</option>
+                <option>Landing Page Development</option>
+            </select>
+
+        </div>
+
+        <div class="form_group">
+            <label>Project Status</label>
+
+            <select id="projectStatus">
+                <option>Pending</option>
+                <option>Ongoing</option>
+                <option>Completed</option>
+                <option>Delivered</option>
+            </select>
+
+        </div>
+
+        <button type="submit">
+            Update Client
+        </button>
+
+    </form>
+
+</div>
+
+<script src="edit.js"></script>
+
+</body>
+</html>

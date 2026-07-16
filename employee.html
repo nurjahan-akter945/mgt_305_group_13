@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Employee Management System</h1>
+
+    <form id="employeeForm">
+
+        <div class="form_group">
+            <label>Employee ID</label>
+            <input type="number" id="employeeId" required>
+        </div>
+
+        <div class="form_group">
+            <label>Employee Name</label>
+            <input type="text" id="employeeName" required>
+        </div>
+
+        <div class="form_group">
+            <label>Email</label>
+            <input type="email" id="employeeEmail" required>
+        </div>
+
+        <div class="form_group">
+            <label>Phone</label>
+            <input type="tel" id="employeePhone" required>
+        </div>
+
+        <div class="form_group">
+            <label>Role</label>
+
+            <select id="employeeRole" required>
+                <option value="">Select Role</option>
+                <option>Data Annotator</option>
+                <option>Data Analyst</option>
+                <option>Web Developer</option>
+                <option>Project Manager</option>
+                <option>QA Reviewer</option>
+            </select>
+
+        </div>
+
+        <div class="form_group">
+            <label>Status</label>
+
+            <select id="employeeStatus" required>
+                <option value="">Select Status</option>
+                <option>Available</option>
+                <option>Busy</option>
+                <option>On Leave</option>
+            </select>
+
+        </div>
+
+        <button type="submit">Save Employee</button>
+
+    </form>
+
+</div>
+
+<script src="employee.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <h1>Client Dashboard</h1>
+    <div class="dashboard-cards">
+
+    <div class="card">
+        <h3>Total Clients</h3>
+        <h2 id="totalClients">0</h2>
+    </div>
+
+    <div class="card">
+        <h3>Pending</h3>
+        <h2 id="pendingProjects">0</h2>
+    </div>
+
+    <div class="card">
+        <h3>Ongoing</h3>
+        <h2 id="ongoingProjects">0</h2>
+    </div>
+
+    <div class="card">
+        <h3>Completed</h3>
+        <h2 id="completedProjects">0</h2>
+    </div>
+
+</div>
+    <div class="search-box">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search by Client ID, Name or Company..."
+        >
+    </div>
+
+    <table border="1" width="100%" id="clientTable">
+
+        <thead>
+            <tr>
+                <th>Client ID</th>
+                <th>Client Name</th>
+                <th>Company</th>
+                <th>Service</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>
