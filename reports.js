@@ -69,3 +69,12 @@ for(let service in services){
 }
 
 document.getElementById("topService").textContent = topService;
+const sidebar = document.querySelector(".sidebar");
+
+const toggle = document.getElementById("toggleSidebar");
+
+toggle.addEventListener("click",function(){
+
+    sidebar.classList.toggle("collapsed");
+
+});

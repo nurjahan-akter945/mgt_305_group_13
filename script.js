@@ -30,3 +30,12 @@ form.addEventListener("submit", function(event) {
     // Clear the form
     form.reset();
 });
+const sidebar = document.querySelector(".sidebar");
+
+const toggle = document.getElementById("toggleSidebar");
+
+toggle.addEventListener("click",function(){
+
+    sidebar.classList.toggle("collapsed");
+
+});

@@ -15,9 +15,11 @@ body{
 /* Main container */
 
 .container{
+    width: 600px;
+}
+.dashboard-container{
     width: 100%;
 }
-
 
 /* Heading */
 
@@ -183,15 +185,137 @@ td{
     text-align: center;
     border-radius: 5px;
 }
+/* Layout */
 
+.layout{
+
+    display:flex;
+
+    min-height:100vh;
+
+}
+
+/* Sidebar */
+
+.sidebar{
+
+    width:260px;
+
+    background:#111827;
+
+    padding:30px 20px;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    height:100vh;
+
+}
+
+.sidebar h2{
+
+    color:white;
+
+    margin-bottom:35px;
+
+    text-align:center;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+.sidebar li{
+
+    margin:18px 0;
+
+}
+
+.sidebar a{
+
+    text-decoration:none;
+
+    color:#cbd5e1;
+
+    display:block;
+
+    padding:12px 15px;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.sidebar a:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+/* Main Content */
+
+.dashboard-container{
+
+    margin-left:280px;
+
+    width:calc(100% - 280px);
+
+    padding:30px;
+
+}
+.sidebar{
+
+    width:260px;
+
+    transition:.3s;
+
+}
+
+.sidebar.collapsed{
+
+    width:70px;
+
+}
+
+.sidebar.collapsed h2{
+
+    display:none;
+
+}
+
+.sidebar.collapsed a{
+
+    font-size:0;
+
+}
+
+.sidebar.collapsed a::before{
+
+    font-size:20px;
+
+}
 @media (max-width: 600px){
 
     body{
         padding: 20px;
+        margin: auto;
     }
-    .card{
+    .container{
+        width: 600px;
+    }
+    .dashboard-container{
         width: 100%;
     }
+    
     h1{
         font-size: 24px;
     }
@@ -216,15 +340,26 @@ td{
     }
 
 }
-@media (max-width: 600px){
+@media(max-width:768px){
 
-    .dashboard-cards{
-        gap: 15px;
+    .sidebar{
+
+        width:100%;
+
+        height:auto;
+
+        position:relative;
+
     }
 
-    .card{
-        flex: 1 1 100%;
-        min-width: 100%;
+    .dashboard-container{
+
+        margin-left:0;
+
+        width:100%;
+
+        padding:20px;
+
     }
 
 }

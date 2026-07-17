@@ -4,11 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project.css">
 </head>
 <body>
 
-<div class="container">
+<!-- <div class="dashboard-container"> -->
+   <!-- <button id="toggleSidebar" class="toggle-btn">
+    ☰
+</button> -->
+
+<div class="layout">
+
+    <aside class="sidebar">
+
+        <h2>AI Data Services</h2>
+
+        <ul>
+
+            <li><a href="home.html">🏠 Home</a></li>
+
+            <li><a href="dashboard.html">👥 Clients</a></li>
+
+            <li><a href="employeeDashboard.html">👨‍💼 Employees</a></li>
+
+            <li><a href="projectDashboard.html">📁 Projects</a></li>
+
+            <li><a href="reports.html">📊 Reports</a></li>
+
+        </ul>
+
+    </aside>
+
+    <main class="dashboard-container">
 
     <h1>Project Dashboard</h1>
 
@@ -47,7 +74,10 @@
     </div>
 
     <!-- Table -->
-    <table  border="1" width="100%" id="projectTable">
+    <!-- Table -->
+<div class="table-container">
+
+    <table id="projectTable">
 
         <thead>
 
@@ -70,6 +100,11 @@
     </table>
 
 </div>
+</div>
+    </main>
+
+</div>
+
 
 <script src="projectDashboard.js"></script>
 

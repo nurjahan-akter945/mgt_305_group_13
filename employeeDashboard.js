@@ -96,3 +96,12 @@ function editEmployee(index){
     alert("Employee edit page will be built next.");
 
 }
+const sidebar = document.querySelector(".sidebar");
+
+const toggle = document.getElementById("toggleSidebar");
+
+toggle.addEventListener("click",function(){
+
+    sidebar.classList.toggle("collapsed");
+
+});

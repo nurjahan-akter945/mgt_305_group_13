@@ -101,3 +101,12 @@ function deleteClient(index) {
     // Reload the page
     location.reload();
 }
+const sidebar = document.querySelector(".sidebar");
+
+const toggle = document.getElementById("toggleSidebar");
+
+toggle.addEventListener("click",function(){
+
+    sidebar.classList.toggle("collapsed");
+
+});
