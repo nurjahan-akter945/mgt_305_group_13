@@ -3,125 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Client Management System</title>
+    <title>AI Data Services MIS</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <div class="container">
+  
+<!-- <button id="toggleSidebar" class="toggle-btn">
+    ☰
+</button> -->
+<div class="layout">
 
-    <h1>Client Information Management System</h1>
+    <aside class="sidebar">
 
-    <form id="clientForm">
+        <h2>AI Data Services</h2>
 
-        <fieldset>
+        <ul>
 
-            <!-- <legend>Client Management</legend> -->
+            <li><a href="home.html">🏠 Home</a></li>
 
+            <li><a href="dashboard.html">👥 Clients</a></li>
 
-            <div class="form_group">
-                <label for="clientId">Client ID:</label>
-                <input 
-                    type="number" 
-                    id="clientId" 
-                    placeholder="Enter Client ID"
-                    required
-                >
-            </div>
+            <li><a href="employeeDashboard.html">👨‍💼 Employees</a></li>
 
+            <li><a href="projectDashboard.html">📁 Projects</a></li>
 
-            <div class="form_group">
-                <label for="clientName">Client Name:</label>
-                <input 
-                    type="text" 
-                    id="clientName"
-                    placeholder="John Smith"
-                    required
-                >
-            </div>
+            <li><a href="reports.html">📊 Reports</a></li>
 
+        </ul>
 
-            <div class="form_group">
-                <label for="companyName">Company Name:</label>
-                <input 
-                    type="text" 
-                    id="companyName"
-                    placeholder="XYZ Ltd."
-                    required
-                >
-            </div>
+    </aside>
 
+    <main class="dashboard-container">
 
-            <div class="form_group">
-                <label for="email">Client Email:</label>
-                <input 
-                    type="email" 
-                    id="email"
-                    placeholder="client@example.com"
-                    required
-                >
-            </div>
+    <h1>AI Data Services MIS</h1>
+    <p>Management Information System Dashboard</p>
 
+    <div class="dashboard-cards">
 
-            <div class="form_group">
-                <label for="phone">Phone Number:</label>
-                <input 
-                    type="tel" 
-                    id="phone"
-                    placeholder="+88017XXXXXXXX"
-                    required
-                >
-            </div>
-
-
-            <div class="form_group">
-                <label for="serviceRequired">Service Required:</label>
-
-                <select id="serviceRequired" required>
-
-                    <option value="">Select Service</option>
-                    <option value="Data Annotation">Data Annotation</option>
-                    <option value="Data Analysis">Data Analysis</option>
-                    <option value="Web Scraping">Web Scraping</option>
-                    <option value="Landing Page Development">
-                        Landing Page Development
-                    </option>
-
-                </select>
-
-            </div>
-
-
-            <div class="form_group">
-                <label for="projectStatus">Project Status:</label>
-
-                <select id="projectStatus" required>
-
-                    <option value="">Select Status</option>
-                    <option value="Pending">Pending</option>
-                    <option value="Ongoing">Ongoing</option>
-                    <option value="Completed">Completed</option>
-                    <option value="Delivered">Delivered</option>
-
-                </select>
-
-            </div>
-
-
-            <button type="submit">
-                Save Client
+        <div class="card">
+            <h3>👥 Client Management</h3>
+            <button onclick="location.href='dashboard.html'">
+                Open
             </button>
+        </div>
 
+        <div class="card">
+            <h3>👨‍💼 Employee Management</h3>
+            <button onclick="location.href='employeeDashboard.html'">
+                Open
+            </button>
+        </div>
 
-        </fieldset>
+        <div class="card">
+            <h3>📁 Project Management</h3>
+            <button onclick="location.href='projectDashboard.html'">
+                Open
+            </button>
+        </div>
 
-    </form>
+        <div class="card">
+            <h3>📊 Reports</h3>
+            <button onclick="location.href='reports.html'">
+                Open
+            </button>
+        </div>
+
+    </div>
+
+</div>
+    </main>
 
 </div>
 
+</body>
 
 <script src="script.js"></script>
-
-</body>
 </html>
