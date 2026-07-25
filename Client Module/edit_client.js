@@ -37,6 +37,6 @@ form.addEventListener("submit", function(event) {
     alert("Client updated successfully!");
 
     // Go back to dashboard
-    window.location.href = "dashboard.html";
+    window.location.href = "clientDashboard.html";
 
 });

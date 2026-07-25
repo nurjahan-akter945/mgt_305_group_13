@@ -83,8 +83,9 @@ function editClient(index) {
     localStorage.setItem("editIndex", index);
 
     // Go to the edit page
-    window.location.href = "edit.html";
+    window.location.href = "edit_client.html";
 
+    
 }
 // Delete a client
 function deleteClient(index) {
@@ -101,12 +102,5 @@ function deleteClient(index) {
     // Reload the page
     location.reload();
 }
-const sidebar = document.querySelector(".sidebar");
 
-const toggle = document.getElementById("toggleSidebar");
 
-toggle.addEventListener("click",function(){
-
-    sidebar.classList.toggle("collapsed");
-
-});

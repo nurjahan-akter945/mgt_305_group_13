@@ -84,7 +84,7 @@ projectForm.addEventListener("submit", function(event){
     localStorage.setItem("projects", JSON.stringify(projects));
 
     alert("Project created successfully!");
+    window.location.href = "/Project Module/projectDashboard.html";
 
-    projectForm.reset();
 
 });

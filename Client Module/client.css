@@ -1,0 +1,528 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* min-height: 100vh;
+    margin: 0; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background:
+    linear-gradient(135deg, #020617, #0f172a);
+}
+
+
+/* Main container */
+
+.container{
+    width: 60%;
+}
+.dashboard-container{
+    width: 100%;
+}
+
+/* Heading */
+
+h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+
+/* Glass Card */
+
+fieldset{
+
+    padding: 35px;
+
+    background: rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(15px);
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(255,255,255,0.25);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,0.3);
+}
+
+
+legend{
+    color: #f8fafc;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+/* Labels */
+
+label{
+    color: #e2e8f0;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+
+.form-group{
+    margin-bottom: 18px;
+}
+
+
+/* Inputs */
+
+input,
+select{
+
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+    color: white;
+
+    background: rgba(255,255,255,0.15);
+
+    border: 1px solid rgba(255,255,255,0.3);
+
+    border-radius: 10px;
+
+    outline: none;
+
+    box-sizing: border-box;
+}
+
+option{
+    background-color: #0f172a;
+    color: white;
+}
+
+input::placeholder{
+    color: #cbd5e1;
+}
+
+
+input:focus,
+select:focus{
+
+    border-color: #60a5fa;
+
+    box-shadow:
+    0 0 15px rgba(96,165,250,0.5);
+}
+
+
+/* Button */
+
+button{
+
+    width: 100%;
+    padding: 13px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 12px;
+    background: #2563eb;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+
+button:hover{
+
+    background:#3b82f6;
+
+    transform: translateY(-2px);
+
+}
+
+/* ==========================
+   GENERAL
+========================== */
+
+/* ==========================
+   SIDEBAR
+========================== */
+
+.sidebar{
+
+    position:fixed;
+
+    left:0;
+
+    top:0;
+
+    width:260px;
+
+    height:100vh;
+
+    background:#111827;
+
+    padding:20px;
+
+    overflow-y:auto;
+
+}
+
+.sidebar h2{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+.sidebar li{
+
+    margin:12px 0;
+
+}
+
+.sidebar a{
+
+    display:block;
+
+    text-decoration:none;
+
+    color:white;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.sidebar a:hover{
+
+    background:#2563eb;
+
+}
+
+.toggle-btn{
+
+    display:none;
+
+}
+
+
+/* ==========================
+   MAIN
+========================== */
+
+.dashboard-container{
+
+    margin-left:280px;
+
+    padding:30px;
+
+}
+h2{
+    color: #fff;
+}
+
+/* ==========================
+   CARDS
+========================== */
+
+.dashboard-cards{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+    margin-bottom:30px;
+
+}
+
+.card{
+
+    flex:1 1 220px;
+
+    min-width:220px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:15px;
+
+    padding:25px;
+
+    text-align:center;
+
+    border:1px solid rgba(255,255,255,.15);
+
+}
+
+.card h3{
+
+    margin-bottom:10px;
+    color: #f8fafc;
+
+}
+
+.card h2{
+
+    font-size:34px;
+
+    color:#60a5fa;
+
+}
+
+/* ==========================
+   SEARCH
+========================== */
+
+.search-box{
+
+    margin-bottom:25px;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    border:none;
+
+    outline:none;
+
+    background:rgba(255,255,255,.12);
+
+    color:white;
+
+}
+
+.search-box input::placeholder{
+
+    color:#cbd5e1;
+
+}
+
+/* ==========================
+   TABLE
+========================== */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+    color: #fff;
+    margin-top:20px;
+
+    min-width:900px;
+
+    background:rgba(255,255,255,.08);
+
+}
+
+th{
+
+    background:#1e40af;
+
+    padding:15px;
+
+}
+
+td{
+
+    padding:15px;
+
+    text-align:center;
+
+    border-bottom:1px solid rgba(255,255,255,.12);
+
+}
+
+tr:hover{
+
+    background:rgba(255,255,255,.05);
+
+}
+
+.table-container{
+
+    overflow-x:auto;
+
+}
+
+
+/* ==========================
+   TABLET
+========================== */
+
+@media(max-width:768px){
+
+    .sidebar{
+
+        position:relative;
+
+        width:100%;
+
+        height:auto;
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        padding:15px;
+
+    }
+    .container{
+        width: 80%;
+    }
+
+    .sidebar h2{
+
+        margin-bottom:15px;
+
+    }
+
+    .sidebar ul{
+
+        display:flex;
+
+        justify-content:center;
+
+        align-items:center;
+
+        flex-wrap:wrap;
+
+        gap:12px;
+
+        width:100%;
+
+    }
+
+    .sidebar li{
+
+        margin:0;
+
+    }
+
+    .sidebar a{
+
+        display:inline-block;
+
+        padding:10px 14px;
+
+    }
+
+    .dashboard-container{
+
+        margin-left:0;
+
+        width:100%;
+
+        padding:20px;
+
+    }
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:600px){
+
+    h1{
+
+        font-size:24px;
+
+    }
+
+    .dashboard-cards{
+        /* margin: 20px 20px 20px 20px; */
+        gap:15px;
+
+    }
+
+    .card{
+
+        flex:1 1 100%;
+
+        min-width:90%;
+
+    }
+
+    .card h2{
+
+        font-size:28px;
+
+    }
+
+    th,
+    td{
+
+        padding:5px;
+
+        font-size:14px;
+
+    }
+
+}
+/* ==========================
+   TABLET & SMALL LAPTOP
+========================== */
+
+@media (max-width:1300px) and (min-width:821px){
+
+    .sidebar{
+
+        width:200px;
+
+        padding:15px;
+
+    }
+
+    .sidebar h2{
+
+        font-size:24px;
+
+    }
+
+    .sidebar a{
+
+        padding:10px;
+
+        font-size:15px;
+
+    }
+
+    .dashboard-container{
+
+        margin-left:260px;
+
+        width:calc(100% - 200px);
+
+        padding:20px;
+
+    }
+
+    .card{
+
+        flex:1 1 250px;
+
+    }
+
+}

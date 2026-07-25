@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="employee.css">
 </head>
 <body>
 
@@ -18,12 +18,11 @@
 
     <ul>
 
-        <li><a href="index.html">🏠 Home</a></li>
-        <li><a href="dashboard.html">👥 Clients</a></li>
-        <li><a href="employeeDashboard.html">👨‍💼 Employees</a></li>
-        <li><a href="projectDashboard.html">📁 Projects</a></li>
-        <li><a href="reports.html">📊 Reports</a></li>
-
+        <li><a href="/index.html">🏠 Home</a></li>
+        <li><a href="/Client Module/clientDashboard.html">👥 Clients</a></li>
+        <li><a href="/Employee Module/employeeDashboard.html">👨‍💼 Employees</a></li>
+        <li><a href="/Project Module/projectDashboard.html">📁 Projects</a></li>
+        <li><a href="/Reports Module/reports.html">📊 Reports</a></li>
     </ul>
 
 </aside>
@@ -66,8 +65,9 @@
     </div>
 
     <!-- Employee Table -->
-    <table border="1" width="100%" id="employeeTable">
+<div class="table-container">
 
+<table id="employeeTable">
         <thead>
             <tr>
                 <th>ID</th>
@@ -87,9 +87,9 @@
 </div>
     </main>
 
-</div>
 
-<script src="demoData.js"></script>
+
+<script src="/Employee Module/demoData.js"></script>
 <script src="employeeDashboard.js"></script>
 
 </body>

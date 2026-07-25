@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Client Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="client.css">
 </head>
 
 <body>
@@ -19,11 +19,11 @@
 
     <ul>
 
-        <li><a href="index.html">🏠 Home</a></li>
-        <li><a href="dashboard.html">👥 Clients</a></li>
-        <li><a href="employeeDashboard.html">👨‍💼 Employees</a></li>
-        <li><a href="projectDashboard.html">📁 Projects</a></li>
-        <li><a href="reports.html">📊 Reports</a></li>
+        <li><a href="/index.html">🏠 Home</a></li>
+        <li><a href="/Client Module/clientDashboard.html">👥 Clients</a></li>
+        <li><a href="/Employee Module/employeeDashboard.html">👨‍💼 Employees</a></li>
+        <li><a href="/Project Module/projectDashboard.html">📁 Projects</a></li>
+        <li><a href="/Reports Module/reports.html">📊 Reports</a></li>
 
     </ul>
 
@@ -62,8 +62,9 @@
         >
     </div>
 
-    <table border="1" width="100%" id="clientTable">
+<div class="table-container">
 
+<table id="clientTable">
         <thead>
             <tr>
                 <th>Client ID</th>
@@ -84,10 +85,9 @@
 </div>
     </main>
 
-</div>
 
-<script src="demoData.js"></script>
-<script src="dashboard.js"></script>
 
+<script src="/Client Module/demoData.js"></script>
+<script src="/Client Module/clientDashboard.js"></script>
 </body>
 </html>

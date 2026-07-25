@@ -88,15 +88,7 @@ function deleteProject(index){
 
 function editProject(index){
 
-    alert("Project edit page will be built next.");
+    // alert("Project edit page will be built next.");
+    window.location.href = "/Project Module/project.html";
 
 }
-const sidebar = document.querySelector(".sidebar");
-
-const toggle = document.getElementById("toggleSidebar");
-
-toggle.addEventListener("click",function(){
-
-    sidebar.classList.toggle("collapsed");
-
-});

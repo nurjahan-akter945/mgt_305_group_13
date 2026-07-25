@@ -1,5 +1,5 @@
 const form = document.getElementById("employeeForm");
-
+const editIndex = localStorage.getItem("editEmployeeIndex");
 form.addEventListener("submit", function(event) {
 
     event.preventDefault();
@@ -21,6 +21,6 @@ form.addEventListener("submit", function(event) {
 
     alert("Employee added successfully!");
 
-    form.reset();
+window.location.href = "/Employee Module/employeeDashboard.html";
 
 });
