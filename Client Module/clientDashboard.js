@@ -30,6 +30,24 @@ document.getElementById("completedProjects").textContent = completed;
 
 const tableBody = document.querySelector("#clientTable tbody");
 
+// Create Client button
+const createBtn = document.createElement("button");
+
+createBtn.textContent = "+ Create Client";
+
+createBtn.style.width = "auto";
+createBtn.style.marginBottom = "20px";
+createBtn.style.padding = "12px 20px";
+
+createBtn.addEventListener("click", function () {
+
+    window.location.href = "client.html";  
+
+});
+
+// Insert button before the search box
+const searchBox = document.querySelector(".search-box");
+searchBox.parentNode.insertBefore(createBtn, searchBox);
 function displayClients(clientList) {
 
     tableBody.innerHTML = "";
@@ -44,7 +62,7 @@ function displayClients(clientList) {
             <td>${client.serviceRequired}</td>
             <td>${client.projectStatus}</td>
             <td>
-                <button onclick="editClient(${index})">Edit</button>
+                <button onclick="editClient(${index})">Update</button>
                 <button onclick="deleteClient(${index})">Delete</button>
             </td>
         </tr>
@@ -76,6 +94,8 @@ searchInput.addEventListener("input", function () {
     displayClients(filteredClients);
 
 });
+
+
 // Update a client
 function editClient(index) {
 

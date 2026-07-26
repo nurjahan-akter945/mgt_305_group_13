@@ -20,22 +20,12 @@ form.addEventListener("submit", function(event) {
     let clients = JSON.parse(localStorage.getItem("clients")) || [];
 
     // Add new client
-    clients.push(client);
+   clients.push(client);
 
-    // Save back to localStorage
-    localStorage.setItem("clients", JSON.stringify(clients));
+localStorage.setItem("clients", JSON.stringify(clients));
 
-    alert("Client information saved successfully!");
+alert("Client added successfully!");
 
-    // Clear the form
-    form.reset();
+window.location.href = "clientDashboard.html";
 });
-const sidebar = document.querySelector(".sidebar");
 
-const toggle = document.getElementById("toggleSidebar");
-
-toggle.addEventListener("click",function(){
-
-    sidebar.classList.toggle("collapsed");
-
-});
